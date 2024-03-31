@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <title>Salary Calculator</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -11,10 +12,56 @@
   </header>
   <main>
     <h2>Add Employee</h2>
-    <h2>Employees</h2>
+    <form class="myInputClass">
+      <input id="FnameInputID" data-testid="firstNameInput" type="Text" placeholder="First Name">
+      <input id="LnameInputID" data-testid="lastNameInput" type="Text" placeholder="Last Name">
+      <input id="IDinputID" data-testid="idInput" type="Text" placeholder="ID">
+      <input id="TitleInputID" data-testid="titleInput" type="Text" placeholder="Title">
+      <input id="annualSalaryID" data-testid="annualSalaryInput" type="Text" placeholder="Annual Salary">
+
+      <button onclick = "submitID(event)" data-testid="submitButton">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Annual Salary</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody id="tableSpot">
+      <!-- <tr>
+        <td>Jen</td>
+        <td>Barber</td>
+        <td>4521</td>
+        <td>Team Lead</td>
+        <td>80,000</td>
+        <td>Delete Button1</td>
+      </tr>
+      <tr>
+        <td>Maurice</td>
+        <td>Moss</td>
+        <td>8724</td>
+        <td>Support Team</td>
+        <td>58,000</td>
+        <td>Delete Button2</td>
+      </tr>
+      <tr>
+        <td>Roy</td>
+        <td>Smith</td>
+        <td>9623</td>
+        <td>Quality Assurance</td>
+        <td>48,000</td>
+        <td>Delete Button3</td>
+      </tr> -->
+      </tbody>
+    </table>
   </main>
-  <footer>
-    <p>Total Monthly</p>
+  <footer class="over-budget">
+    <p id="monthlySalaryspot">Total Monthly Salary:</p>
   </footer>
 </body>
 </html>

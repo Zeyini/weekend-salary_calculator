@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+    background-color: rgb(134, 143, 147);
+    padding: 2%;
+    color: white;
+}
+body{
+    border: 8px solid;
+   
+}
+.myInputClass input {
+    padding: 2px;
+    border: 1px solid;
+    margin: 8px;
+
+}
+
+button {
+    padding: 1px;
+    border: 2px solid;
+    border-color: rgb(150, 147, 153);
+    /* position: fixed; */
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table th {
+    background-color: rgb(220, 243, 243);
+    padding: 8px;
+    border: 1px solid;
+    border-color: black;
+    border-collapse: collapse;
+    
+}
+table td {
+    padding: 8px;
+    border: 1px solid;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+footer {
+    margin-left: 30%;
+    width: fit-content;
+
+}
