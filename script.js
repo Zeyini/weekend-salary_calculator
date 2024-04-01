@@ -1,7 +1,9 @@
 // global variable to add the annual salary input by user to the exisiting value in totalMonthlySalary
 let totalMonthlySalary = 0;
 
+// the function is referencing the HTML and defining what events should be evalued when user clicks submit 
 function submitID(event) {
+    // event.preveent defalut is stopping the refershing of the site when user clicks submit
     event.preventDefault();
 
     let fnameTextinput = document.getElementById("FnameInputID").value;
