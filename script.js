@@ -5,7 +5,7 @@ let totalMonthlySalary = 0;
 function submitID(event) {
     // event.preveent defalut is stopping the refershing of the site when user clicks submit
     event.preventDefault();
-
+// referencing the HTML and commanding dom to get the value of the element referenced by the getElementById and assigning the value user inputs to new variables
     let fnameTextinput = document.getElementById("FnameInputID").value;
     let lnameTextinput = document.getElementById("LnameInputID").value;
     let idTextinput = document.getElementById("IDinputID").value;
