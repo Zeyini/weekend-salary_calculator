@@ -12,8 +12,9 @@ function submitID(event) {
     let titleTextinput = document.getElementById("TitleInputID").value;
     let annualTextinput = document.getElementById("annualSalaryID").value;
     
+    // console log to check if user inputted values are being evaluted in the dom
  console.log([fnameTextinput,lnameTextinput,idTextinput,titleTextinput,annualTextinput]);
-
+// created a new table row by referencing the varaibles above that have been assigned the value input of users. Also created a button in javascriptusing the back tic.
     let newTablerow = `
     <tr>
       <td>${fnameTextinput}</td>
@@ -25,6 +26,9 @@ function submitID(event) {
       <td><button onclick="deleteRow(event)">❌</button></td>
     </tr>
     `
+    // identified where the newTablerow created should show by referencing the id in the body of the table a
+    // and assigned the table created in javascript to the location referencing in HTML for it to show up in corrrect spot in the dom.
+    //used   innner.html to indicate inside the body of the table
     let tableLocation = document.getElementById("tableSpot");
     tableLocation.innerHTML += newTablerow;
 
